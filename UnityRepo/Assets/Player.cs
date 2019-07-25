@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         movement = Input.GetAxisRaw("Horizontal");
-        Debug.Log("Im moving mom "+movement);
     }
 
     private void FixedUpdate()
@@ -25,7 +24,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collition");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 }
